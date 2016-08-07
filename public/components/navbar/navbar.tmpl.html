@@ -1,0 +1,32 @@
+<md-toolbar class="md-hue-2 navbar">
+	<div class="md-toolbar-tools">
+		<md-button class="md-icon-button" aria-label="toggle" ng-click="$ctrl.toggleSidenav()">
+			<md-icon md-svg-src="images/ic_menu_black_24px.svg"></md-icon>
+		</md-button>
+		<h1>
+			{{$ctrl.title}}
+		</h1>
+		<span flex></span>
+		<md-button class="md-icon-button" aria-label="add" ng-click="$ctrl.createStory($event)">
+			<md-icon md-svg-src="images/ic_add_black_24px.svg"></md-icon>
+		</md-button>
+		<md-button class="md-icon-button" aria-label="refresh">
+			<md-icon md-svg-src="images/ic_refresh_black_24px.svg"></md-icon>
+		</md-button>
+	</div>
+</md-toolbar>
+<md-sidenav md-component-id="left" md-whiteframe="4">
+	<md-toolbar>
+	<div class="md-toolbar-tools">
+		<h1>
+			{{$ctrl.title}}		
+		</h1>
+		<span flex></span>
+		<md-button class="md-icon-button" ng-click="$ctrl.toggleSidenav()" aria-label="close">
+			<md-icon md-svg-src="images/ic_close_black_24px.svg"></md-icon>
+		</md-button>
+	</div>
+	</md-toolbar>
+	<md-content>
+	</md-content>
+</md-sidenav>

@@ -1,0 +1,32 @@
+<md-dialog flex="40">
+	<form>
+		<div class="md-toolbar-tools">
+			<h2>Create story</h2>
+			<span flex></span>
+			<md-button class="md-icon-button" aria-label="close" ng-click="ctrl.hide()">
+				<md-icon md-svg-src="images/ic_close_black_24px.svg"></md-icon>
+			</md-button>
+		</div>
+		<md-dialog-content>
+			<div class="md-dialog-content" flex="100">
+				<div layout="column">
+					<md-input-container class="md-block">
+						<label>Title</label>
+						<input type="text" ng-model="ctrl.title"/>
+					</md-input-container>
+					<div class="input-fix">
+						<md-input-container class="md-block">
+							<textarea ng-model="ctrl.story" placeholder="Story"></textarea>
+						</md-input-container>	
+					</div>
+					
+				</div>
+			</div>
+			<div layout="row" layout-align="end	">
+				<md-button arial-label="done" class="md-default">
+					Done
+				</md-button>
+			</div>
+		</md-dialog-content>
+	</form>
+</md-dialog>	

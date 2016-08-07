@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cornetto</title>
+	<link rel="manifest" href="manifest.json">
+	<link href="bower_components/angular-material/angular-material.min.css" rel="stylesheet"/>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body ng-app="app">
+	<main></main>
+
+	<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyD5Hh7tYe2n3vh2EpnYCozFZ8v6BLRWTvA",
+	    authDomain: "cornetto-d0388.firebaseapp.com",
+	    databaseURL: "https://cornetto-d0388.firebaseio.com",
+	    storageBucket: "",
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-aria/angular-aria.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+	<script type="text/javascript" src="bower_components/angular-messages/angular-messages.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-material/angular-material.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="components/navbar/navbar.component.js"></script>
+	<script type="text/javascript" src="components/navbar/navbar.controller.js"></script>
+	<script type="text/javascript" src="components/story/story.component.js"></script>
+	<script type="text/javascript" src="components/main/main.controller.js"></script>
+	<script type="text/javascript" src="components/main/main.component.js"></script>
+	<script type="text/javascript" src="components/storyDialog/storyDialog.controller.js"></script>
+	<script type="text/javascript" src="components/storyDialog/storyDialog.service.js"></script>
+</body>	
+</html>
