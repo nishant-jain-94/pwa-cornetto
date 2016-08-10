@@ -3,6 +3,11 @@ body {
 	color: black !important;
 	height: 100%;
 }
+
+.sidenav-header {
+	  background-color: white !important;
+  color: black !important;	
+}
  
 .navbar {
   background-color: white !important;
